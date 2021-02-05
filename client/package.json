@@ -1,0 +1,50 @@
+{
+	"name": "client",
+	"version": "0.0.1",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "./build_releases.sh"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@gitlab.com/adoptaunabuelo/client.git"
+	},
+	"author": "Guillermo Angeles",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://gitlab.com/adoptaunabuelo/client/issues"
+	},
+	"homepage": "https://gitlab.com/adoptaunabuelo/client#readme",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"parse": "^2.13.0",
+		"stripe": "^8.62.0"
+	},
+	"devDependencies": {
+		"@babel/core": "7.4.5",
+		"@babel/plugin-proposal-class-properties": "7.4.4",
+		"@babel/plugin-transform-flow-comments": "7.4.4",
+		"@babel/plugin-transform-flow-strip-types": "7.4.4",
+		"@babel/plugin-transform-runtime": "7.4.4",
+		"@babel/polyfill": "7.4.4",
+		"@babel/preset-env": "7.4.5",
+		"@babel/preset-react": "7.0.0",
+		"babel-core": "7.0.0-bridge.0",
+		"babel-eslint": "10.0.1",
+		"babel-jest": "24.5.0",
+		"babel-plugin-inline-package-json": "2.0.0",
+		"babel-plugin-minify-dead-code-elimination": "0.5.0",
+		"babel-plugin-transform-inline-environment-variables": "0.4.3",
+		"browserify": "^16.5.1",
+		"gulp": "4.0.2",
+		"gulp-babel": "8.0.0",
+		"gulp-derequire": "2.1.0",
+		"gulp-insert": "0.5.0",
+		"gulp-rename": "1.4.0",
+		"gulp-uglify-es": "1.0.4",
+		"gulp-watch": "5.0.1",
+		"vinyl-source-stream": "^2.0.0"
+	}
+}

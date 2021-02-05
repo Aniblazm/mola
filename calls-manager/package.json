@@ -1,0 +1,49 @@
+{
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "12.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec 'heroku local' --signal SIGTERM",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "@timberio/node": "^0.35.0",
+    "airtable": "^0.8.1",
+    "airtable-plus": "^1.0.4",
+    "body-parser": "^1.19.0",
+    "ejs": "^2.5.6",
+    "email-templates": "^7.0.4",
+    "express": "^4.15.2",
+    "handlebars": "^4.7.6",
+    "jquery": "^3.5.0",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.28",
+    "mongoose": "^5.9.9",
+    "multer": "^1.4.2",
+    "node-cache": "^5.1.0",
+    "node-fetch": "^2.6.0",
+    "nodemailer": "^6.4.6",
+    "nodemailer-sendmail-transport": "^1.0.2",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "q": "^1.5.1",
+    "twilio": "^3.43.0"
+  },
+  "devDependencies": {
+    "request": "^2.88.2",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

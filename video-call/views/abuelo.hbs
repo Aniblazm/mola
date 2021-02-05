@@ -1,0 +1,376 @@
+<div class="body-wrap">
+    <header class="site-header reveal-from-top">
+        <div class="container">
+            <div class="site-header-inner">
+                <div class="brand">
+                    <h1 class="m-0">
+                        <a href="/"><img src="/images/logoAUA2.png" alt="" /></a>
+                    </h1>
+                </div>
+                <!-- <nav>
+              <ul>
+            <a href="#">Llama Ya</a>
+               
+              
+            <a href="#">Empresas</a>
+              </ul>
+            </nav> -->
+                <a href="#formu" class="button button-primary button-wide-mobile ">Participa</a>
+            </div>
+        </div>
+    </header>
+    <main class="site-content">
+        <section class="hero section illustration-section-01">
+            <div class="container">
+                <div class="hero-inner section-inner">
+                    <div class="split-wrap invert-mobile">
+                        <div class="split-item">
+                            <div class="hero-content split-item-content center-content-mobile">
+                                <h1 class="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="150" id="main-title">
+                                    ¡Hola, soy {{abuelo.fields.Name}}!<br />
+                                </h1>
+                                <p class="mt-0 mb-32 reveal-from-bottom" data-reveal-delay="300">
+                                    Soy un@ abuel@ a la que puedes dejar un video mensaje. Me hará mucha ilusión
+                                    recibirlos. ¡Gracias!
+                                </p>
+                            </div>
+                            <style>
+                                @media (min-width: 641px) {
+                                    .hero .split-wrap .split-item {
+                                        min-height: 400px;
+                                    }
+                                }
+                            </style>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-block" class="cta section center-content-mobile reveal-from-bottom">
+            <div class="container">
+                <div class="cta-inner section-inner cta-split">
+                    <div class="cta-slogan">
+                        <input id="abuelo-id" value="{{abuelo.id}}" type="hidden">
+                        <h3 class="m-0">Grabar un video mensaje para {{abuelo.fields.Name}}.</h3>
+                        <video id="myVideo" playsinline class="video-js vjs-default-skin"></video>
+
+
+                        <div class="inputSelector" id="inputVideoSelector" style="display:none;">
+                            <label>Select video input: </label>
+                            <select id="selector"></select>
+                        </div>
+
+
+                    </div>
+                    <div class="cta-action" id="cta-send" style="display:none;">
+                        <div class="">
+                            <label class="form-label screen-reader" for="input-email">Esto es una etiqueta</label>
+                            <div class="form-group-desktop">
+                                <input class="form-input" type="text" id="name-voluntario" value=""
+                                    placeholder="Tu nombre..." />
+                                <button class="button button-primary" id="button-send-video">Enviar video a
+                                    {{abuelo.fields.ShortName}} </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-action" id="cta-start">
+                        <div class="">
+                            <div class="form-group-desktop">
+                                <button class="button button-primary" onclick="{player.record().getDevice()}">
+                                    Empezar a Grabar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cta-action" id="cta-invideo" style="display:none;">
+                        <div class="">
+                            <div class="form-group-desktop">
+                                <button class="button button-primary" onclick="{player.record().stop()}">
+                                    Parar Grabación
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video-block-sent" class="cta section center-content-mobile reveal-from-bottom"
+            style="display:none;">
+            <div class="container">
+                <div class="cta-inner section-inner cta-split">
+                    <div class="cta-slogan">
+                        <h3 class="m-0">¡Gracias por tu video mensaje, le llegará a {{abuelo.fields.Name}} por email.
+                        </h3>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer center-content-mobile">
+
+        <div class="section-5">
+            <div class="div-block-8">
+                <a href="https://twitter.com/adoptaunabuelo" class="w-inline-block">
+                    <img src="/images/Green.svg" alt="" class="image-14"></a>
+                <a href="https://www.instagram.com/adopta1abuelo/" class="w-inline-block"><img src="/images/Green_2.svg"
+                        alt="" class="image-15"></a>
+                <a href="https://www.youtube.com/channel/UCrAmOiuAThn7XUEHLOZ5Dpg" class="w-inline-block"><img
+                        src="/images/Green_3.svg" alt="" class="image-16"></a>
+                <a href="https://www.facebook.com/adoptaunabuelo1/" class="w-inline-block"><img
+                        src="/images/Green_1.svg" alt=""></a></div>
+            <div class="div-block-9">
+                <a href="mailto:info@adoptaunabuelo.org" class="w-inline-block">
+                    <div class="text-block-11">info@adoptaunabuelo.org</div>
+                </a>
+            </div>
+            <div class="div-block-9-copy cust">
+                <div class="text-block-10 customs">Calle de Modesto Lafuente, 49, 28003 Madrid</div>
+            </div>
+            <div class="div-block-9-copy">
+                <a href="./terminos-y-condiciones.html" class=" w-inline-block">
+                    <div class="text-block-10 link-footer">Aviso Legal -</div>
+                </a>
+                <a href="./politica-de-privacidad.html" class=" w-inline-block">
+                    <div class="text-block-10 link-footer"> Política de Privacidad -</div>
+                </a>
+                <a href="./prensa.html" class="w-inline-block">
+                    <div class="text-block-10 link-footer"> Prensa -</div>
+                </a>
+                <a href="https://www.adoptaunabuelo.org/transparencia/" class="w-inline-block">
+                    <div class="text-block-10 link-footer"> Transparencia</div>
+                </a>
+            </div>
+            <div class="div-block-9-copy cust-copy">
+                <div class="text-block-10 customs">©2020 Adopta Un Abuelo todos los derechos reservados.</div>
+            </div>
+        </div>
+
+
+        <div class="div-block-8 da">
+            <a href="#" class="w-inline-block"><img src="/images/logo_05.png" alt="" class="image-14"></a>
+            <a href="#" class="w-inline-block"><img src="/images/GfS_Residency_Badges_Mixed@3x.png" alt=""
+                    class="image-15-2" width="156" height="50"></a>
+            <a href="#" class="w-inline-block"><img src="/images/logo_04.png" alt="" class="image-16"></a>
+            <a href="#" class="w-inline-block"><img src="/images/logo_02.png" alt="" class="image-17"></a>
+            <a href="#" class="w-inline-block"><img src="/images/logo_03.png" alt=""></a>
+        </div>
+
+        <!-- <div class="container">
+          <div class="site-footer-inner">
+            <div class="footer-top space-between text-xxs">
+              <div class="brand">
+                <a href="/"><img src="/images/logo.svg" alt="Neon" width="32" height="32" /></a>
+              </div>
+              <div class="footer-social">
+                <div></div>
+              </div>
+            </div>
+            <div class="footer-bottom space-between text-xxs invert-order-desktop">
+              <nav class="footer-nav">
+                <ul class="list-reset">
+                  <li>
+                    <a target="_blank" href="https://www.linkedin.com/in/cohnen/"
+                      >Made with ❤️ by E.Cohnen & J.García</a
+                    >
+                  </li>
+           
+              </nav>
+              <div class="footer-copyright">
+                &copy; 2020 Adopta Un Abuelo - INTERGENERATIONAL TECHNOLOGIES, S.L., all rights
+                reserved
+              </div>
+            </div>
+          </div>
+        </div> -->
+    </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.9/RecordRTC.min.js"></script>
+
+<script src="https://vjs.zencdn.net/7.7.6/video.js"></script>
+
+<script src="//unpkg.com/videojs-record/dist/videojs.record.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/videojs-record/3.11.0/plugins/videojs.record.ts-ebml.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.3.0/adapter.min.js"></script>
+<script src="/js/browser-video-workarounds.js"></script>
+
+<script src="/js/landing.js"></script>
+<script>
+
+
+    let options = {
+        // video.js options
+        controls: true,
+        controlBar: {
+            // hide fullscreen and volume controls
+            fullscreenToggle: false,
+            volumePanel: false,
+            pipToggle: false
+        },
+        loop: false,
+        fluid: false,
+        width: 320,
+        height: 240,
+        plugins: {
+            // videojs-record plugin options
+            record: {
+                image: false,
+                audio: true,
+                video: true,
+                animation: false,
+                maxLength: 30,
+                convertEngine: 'ts-ebml',
+                debug: true
+            }
+        }
+    };
+
+    applyVideoWorkaround();
+
+    let player = videojs('myVideo', options, function () {
+        // print version information at startup
+        const msg = 'Using video.js ' + videojs.VERSION +
+            ' with videojs-record ' + videojs.getPluginVersion('record');
+        videojs.log(msg);
+    });
+
+    // enumerate devices once
+    player.one('deviceReady', function () {
+        player.record().enumerateDevices();
+    });
+
+    player.on('enumerateReady', function () {
+        devices = player.record().devices;
+
+        // handle selection changes
+        var inputSelector = document.getElementById('selector');
+        inputSelector.addEventListener('change', changeVideoInput);
+
+        // populate select options
+        var deviceInfo, option, i;
+        for (i = 0; i !== devices.length; ++i) {
+            deviceInfo = devices[i];
+            option = document.createElement('option');
+            option.value = deviceInfo.deviceId;
+            if (deviceInfo.kind === 'videoinput') {
+                console.info('Found video input device: ', deviceInfo.label);
+                option.text = deviceInfo.label || 'input device ' +
+                    (inputSelector.length + 1);
+                inputSelector.appendChild(option);
+            }
+        }
+
+        if (inputSelector.length == 0) {
+            // no output devices found, disable select
+            option = document.createElement('option');
+            option.text = 'No video input devices found';
+            option.value = undefined;
+            inputSelector.appendChild(option);
+            inputSelector.disabled = true;
+            console.warn(option.text);
+        } else {
+            console.info('Total video input devices found:', inputSelector.length);
+        }
+
+        // show input selector section
+        inputSelector.style.display = 'block';
+    });
+
+    function changeVideoInput(event) {
+        var label = event.target.options[event.target.selectedIndex].text;
+        deviceId = event.target.value;
+
+        try {
+            // change video input device
+            player.record().setVideoInput(deviceId);
+
+            console.log("Changed video input to '" + label + "' (deviceId: " +
+                deviceId + ")");
+        } catch (error) {
+            console.warn(error);
+
+            // jump back to first output device in the list as it's the default
+            event.target.selectedIndex = 0;
+        }
+    }
+
+    // error handling
+    player.on('enumerateError', function () {
+        console.warn('enumerate error:', player.enumerateErrorCode);
+    });
+
+    player.on('deviceError', function () {
+        console.warn('device error:', player.deviceErrorCode);
+    });
+
+    player.on('error', function (element, error) {
+        console.error(error);
+    });
+
+    player.on('deviceReady', function () {
+        console.warn('deviceReady');
+        $('#inputVideoSelector').show();
+        player.record().start();
+    });
+
+    // user clicked the record button and started recording
+    player.on('startRecord', function () {
+        console.log('started recording!');
+        $('#cta-invideo').show();
+        $('#cta-start').hide();
+        $('#cta-send').hide();
+    });
+
+    player.on('finishRecord', function () {
+        // show save as dialog
+        console.log('finished recording: ', player.recordedData);
+        //player.record().saveAs({ 'video': 'my-video-file-name.webm' });
+        setTimeout(() => { player.play() }, 500);
+        $('#cta-invideo').hide();
+        $('#cta-start').hide();
+        $('#cta-send').show();
+
+    });
+
+    $('#button-send-video').click(function (e) {
+        var data = player.recordedData;
+        var serverUrl = '/video';
+        var formData = new FormData();
+        formData.append('video', data);
+        formData.append('voluntarioName', $('#name-voluntario').val());
+        formData.append('abueloId', '{{abuelo.id}}');
+
+        console.log('uploading recording:', 'video');
+
+        fetch(serverUrl, {
+            method: 'POST',
+            body: formData
+        }).then(
+            success => {
+                console.log('recording upload complete.');
+                $('#video-block').hide();
+                $('#video-block-sent').show();
+            }
+        ).catch(
+            error => {
+                console.error('an upload error occurred!');
+                alert('Error mandando el video, ¿puedes volver a intentarlo en unos minutos?');
+            }
+        );
+    });
+
+
+
+    //let device = player.record().getDevice();
+    //inputconsole.log(device);
+
+</script>

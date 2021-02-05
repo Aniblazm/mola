@@ -1,0 +1,80 @@
+
+2020-04-13T13:45:39.598658+00:00 app[web.1]: CALLED WEBHOOK
+2020-04-13T13:45:39.602278+00:00 app[web.1]: {
+2020-04-13T13:45:39.602286+00:00 app[web.1]: resource: 'call',
+2020-04-13T13:45:39.602287+00:00 app[web.1]: event: 'call.created',
+2020-04-13T13:45:39.602287+00:00 app[web.1]: timestamp: 1586785539,
+2020-04-13T13:45:39.602290+00:00 app[web.1]: token: 'c2f0a26b57873e48a428f36054ed31c3',
+2020-04-13T13:45:39.602290+00:00 app[web.1]: data: {
+2020-04-13T13:45:39.602291+00:00 app[web.1]: id: 228265217,
+2020-04-13T13:45:39.602292+00:00 app[web.1]: direct_link: 'https://api.aircall.io/v1/calls/228265217',
+2020-04-13T13:45:39.602292+00:00 app[web.1]: direction: 'inbound',
+2020-04-13T13:45:39.602292+00:00 app[web.1]: status: 'initial',
+2020-04-13T13:45:39.602293+00:00 app[web.1]: missed_call_reason: null,
+2020-04-13T13:45:39.602293+00:00 app[web.1]: started_at: 1586785538,
+2020-04-13T13:45:39.602293+00:00 app[web.1]: answered_at: null,
+2020-04-13T13:45:39.602293+00:00 app[web.1]: ended_at: null,
+2020-04-13T13:45:39.602294+00:00 app[web.1]: duration: 0,
+2020-04-13T13:45:39.602294+00:00 app[web.1]: voicemail: null,
+2020-04-13T13:45:39.602294+00:00 app[web.1]: recording: null,
+2020-04-13T13:45:39.602294+00:00 app[web.1]: asset: null,
+2020-04-13T13:45:39.602295+00:00 app[web.1]: raw_digits: null,
+2020-04-13T13:45:39.602295+00:00 app[web.1]: number: {
+2020-04-13T13:45:39.602295+00:00 app[web.1]: id: 158287,
+2020-04-13T13:45:39.602296+00:00 app[web.1]: direct_link: 'https://api.aircall.io/v1/numbers/158287',
+2020-04-13T13:45:39.602296+00:00 app[web.1]: name: 'Nueva Linea Voluntarios',
+2020-04-13T13:45:39.602296+00:00 app[web.1]: digits: '+34 911 43 60 53',
+2020-04-13T13:45:39.602296+00:00 app[web.1]: country: 'ES',
+2020-04-13T13:45:39.602297+00:00 app[web.1]: time_zone: 'Europe/Madrid',
+2020-04-13T13:45:39.602297+00:00 app[web.1]: open: true,
+2020-04-13T13:45:39.602297+00:00 app[web.1]: availability_status: 'open',
+2020-04-13T13:45:39.602298+00:00 app[web.1]: is_ivr: false,
+2020-04-13T13:45:39.602298+00:00 app[web.1]: live_recording_activated: true,
+2020-04-13T13:45:39.602298+00:00 app[web.1]: messages: [Object]
+2020-04-13T13:45:39.602298+00:00 app[web.1]: },
+2020-04-13T13:45:39.602299+00:00 app[web.1]: archived: false,
+2020-04-13T13:45:39.602299+00:00 app[web.1]: teams: [],
+2020-04-13T13:45:39.602299+00:00 app[web.1]: comments: [],
+2020-04-13T13:45:39.602300+00:00 app[web.1]: tags: []
+2020-04-13T13:45:39.602300+00:00 app[web.1]: }
+2020-04-13T13:45:39.602300+00:00 app[web.1]: }
+2020-04-13T13:45:39.602415+00:00 app[web.1]: NEW CALL...null
+2020-04-13T13:45:39.603140+00:00 app[web.1]: {
+2020-04-13T13:45:39.603141+00:00 app[web.1]: id: 228265217,
+2020-04-13T13:45:39.603141+00:00 app[web.1]: direct_link: 'https://api.aircall.io/v1/calls/228265217',
+2020-04-13T13:45:39.603142+00:00 app[web.1]: direction: 'inbound',
+2020-04-13T13:45:39.603142+00:00 app[web.1]: status: 'initial',
+2020-04-13T13:45:39.603142+00:00 app[web.1]: missed_call_reason: null,
+2020-04-13T13:45:39.603143+00:00 app[web.1]: started_at: 1586785538,
+2020-04-13T13:45:39.603143+00:00 app[web.1]: answered_at: null,
+2020-04-13T13:45:39.603143+00:00 app[web.1]: ended_at: null,
+2020-04-13T13:45:39.603144+00:00 app[web.1]: duration: 0,
+2020-04-13T13:45:39.603144+00:00 app[web.1]: voicemail: null,
+2020-04-13T13:45:39.603144+00:00 app[web.1]: recording: null,
+2020-04-13T13:45:39.603144+00:00 app[web.1]: asset: null,
+2020-04-13T13:45:39.603145+00:00 app[web.1]: raw_digits: null,
+2020-04-13T13:45:39.603145+00:00 app[web.1]: number: {
+2020-04-13T13:45:39.603146+00:00 app[web.1]: id: 158287,
+2020-04-13T13:45:39.603146+00:00 app[web.1]: direct_link: 'https://api.aircall.io/v1/numbers/158287',
+2020-04-13T13:45:39.603146+00:00 app[web.1]: name: 'Nueva Linea Voluntarios',
+2020-04-13T13:45:39.603146+00:00 app[web.1]: digits: '+34 911 43 60 53',
+2020-04-13T13:45:39.603147+00:00 app[web.1]: country: 'ES',
+2020-04-13T13:45:39.603147+00:00 app[web.1]: time_zone: 'Europe/Madrid',
+2020-04-13T13:45:39.603147+00:00 app[web.1]: open: true,
+2020-04-13T13:45:39.603148+00:00 app[web.1]: availability_status: 'open',
+2020-04-13T13:45:39.603148+00:00 app[web.1]: is_ivr: false,
+2020-04-13T13:45:39.603148+00:00 app[web.1]: live_recording_activated: true,
+2020-04-13T13:45:39.603148+00:00 app[web.1]: messages: {
+2020-04-13T13:45:39.603150+00:00 app[web.1]: welcome: 'https://dsw9pf6haa4rn.cloudfront.net/tracks/tts/languages/es/voices/Penelope/068fd49cb41fc672f3551907a1b78d8aa65daa28.mp3',
+2020-04-13T13:45:39.603151+00:00 app[web.1]: waiting: 'https://dsw9pf6haa4rn.cloudfront.net/tracks/library/bensound-retrosoul.mp3',
+2020-04-13T13:45:39.603152+00:00 app[web.1]: ivr: 'https://dsw9pf6haa4rn.cloudfront.net/tts/languages/es/voices/Penelope/dc6e385384e7f75349479cc5d2d29486a0440ad0.mp3',
+2020-04-13T13:45:39.603152+00:00 app[web.1]: voicemail: 'https://dsw9pf6haa4rn.cloudfront.net/tracks/tts/languages/es/voices/Penelope/f450ce3aa652142e2421cdee62823143dc58ff6d.mp3',
+2020-04-13T13:45:39.603152+00:00 app[web.1]: closed: 'https://dsw9pf6haa4rn.cloudfront.net/tracks/tts/languages/es/voices/Penelope/46c9f46eb778632df89e47373568396d8ff2bffe.mp3',
+2020-04-13T13:45:39.603153+00:00 app[web.1]: callback_later: 'https://dsw9pf6haa4rn.cloudfront.net/tts/languages/es/voices/Penelope/f11e65d724c771400eb11278bc9bb11a60ddc436.mp3'
+2020-04-13T13:45:39.603153+00:00 app[web.1]: }
+2020-04-13T13:45:39.603153+00:00 app[web.1]: },
+2020-04-13T13:45:39.603154+00:00 app[web.1]: archived: false,
+2020-04-13T13:45:39.603154+00:00 app[web.1]: teams: [],
+2020-04-13T13:45:39.603154+00:00 app[web.1]: comments: [],
+2020-04-13T13:45:39.603155+00:00 app[web.1]: tags: []
+2020-04-13T13:45:39.603155+00:00 app[web.1]: }
